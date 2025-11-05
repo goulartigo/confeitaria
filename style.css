@@ -24,7 +24,7 @@ nav ul {
   text-align: center;
 }
 
-nav ul {
+nav ul li {
   display: inline;
   margin: 0 15px;
 }
