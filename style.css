@@ -6,7 +6,10 @@
 header{
   background-color: #ff9900fd;
   color: white;
-  height: 150px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1{
