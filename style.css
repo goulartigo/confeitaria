@@ -1,23 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Google Sans Code' sans-serif;
 }
 
-header{
-  background-color: #ff9900fd;
+header {
+  background-color: #f8b400;
   color: white;
-  height: 250px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header h1{
+header h1 {
   text-align: center;
   font-size: 50px;
 }
 
-h1 {
+h1 {  
   margin-bottom: 20px;
 }
 
@@ -31,53 +32,26 @@ nav ul li {
   margin: 0 15px;
 }
 
-img{
+img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
+/*Exemplo com classe no css*/
 .sobre-nos {
   width: 95%;
   text-align: center;
   padding: 20px;
 }
 
-.paragrafo-texto{
+.paragrafo-texto {
   font-size: 20px;
   text-align: justify;
 }
 
-.itens-cardapio{
+.itens-cardapio {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-
-.item-cardapio{
-  display: flex;
-
-
-}
-
-.descricao{
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #555;
-}
-
-.img-item{
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-h3{
-  margin-bottom: 10px;
-  color: #f8b400;
-  font-size: 18px;
-
-}
-  
-
