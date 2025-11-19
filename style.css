@@ -48,5 +48,10 @@ img{
   text-align: justify;
 }
 
+.itens-cardapio{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
   
 
