@@ -1,0 +1,1 @@
+const divItemCardapio = document.createElement('div')
