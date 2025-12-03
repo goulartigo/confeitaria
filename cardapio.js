@@ -37,7 +37,7 @@ function consultarCardapio() {
             console.log(data); 
             criarItemCardapio(data.titulo,  
                                     data.descricao, 
-                                             data.foto)
+                                             data.foto);
         })
         .catch(error => {
             console.error('Erro:', error);
