@@ -24,6 +24,23 @@ divC.appendChild(divItemCardapio)
 
 }
 
-criarItemCardapio('Bolo de Chocolate',  
-    'Um classico irresistivel com camadas de chocolate.', 
-    'https://cloudfront-us-east-1.images.arcpublishing.com/estadao/25HQQTDV6RCY3B44ZJ7VLCSB5M.jpg')
+function consultarCardapio() {
+   
+ fetch('https://confeitariaapi-636r.onrender.com/cardapio')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro na requisição');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data); 
+            criarItemCardapio(data.titulo,  
+                                    data.descricao, 
+                                             data.foto)
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            document.getElementById('resultado').innerHTML = `Erro: ${error.message}`;
+        });
+}
